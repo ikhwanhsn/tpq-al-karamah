@@ -17,7 +17,7 @@ import Image from "next/image";
 import ngaji from "../../public/img/ngaji.jpg";
 
 const TPQLandingPage = () => {
-  const scrollToSection = (sectionId: any) => {
+  const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -42,7 +42,7 @@ const TPQLandingPage = () => {
           </h1>
 
           <p className="text-xl md:text-2xl mb-2 text-emerald-100 max-w-2xl mx-auto">
-            Pusat Pendidikan Al-Qur'an untuk Anak-anak
+            Pusat Pendidikan Al-Qur&apos;an untuk Anak-anak
           </p>
 
           <div className="flex items-center justify-center gap-2 mb-6 text-emerald-200">

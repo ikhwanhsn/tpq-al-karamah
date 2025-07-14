@@ -4,11 +4,8 @@ import React, { useState } from "react";
 import {
   BookOpen,
   Users,
-  Clock,
   MapPin,
   Star,
-  Heart,
-  Award,
   ArrowLeft,
   Calendar,
   Camera,
@@ -18,11 +15,22 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import ngaji from "../../../public/img/ngaji.jpg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+
+interface DocumentationItem {
+  id: number;
+  title: string;
+  description: string;
+  category: "learning" | "activities" | "events" | "facilities";
+  date: string;
+  image: StaticImageData; // Assuming ngaji is imported as StaticImageData from next/image
+}
 
 const DocumentationPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<DocumentationItem | null>(
+    null
+  );
   const [searchTerm, setSearchTerm] = useState("");
 
   const categories = [
@@ -33,7 +41,7 @@ const DocumentationPage = () => {
     { id: "facilities", name: "Fasilitas", icon: MapPin },
   ];
 
-  const documentationData = [
+  const documentationData: DocumentationItem[] = [
     {
       id: 1,
       title: "Pembelajaran Iqra Jilid 1",
@@ -151,7 +159,7 @@ const DocumentationPage = () => {
     return matchesCategory && matchesSearch;
   });
 
-  const formatDate = (dateString: any) => {
+  const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString("id-ID", {
       year: "numeric",
@@ -160,7 +168,7 @@ const DocumentationPage = () => {
     });
   };
 
-  const PhotoPlaceholder = ({ item }: any) => (
+  const PhotoPlaceholder = ({ item }: { item: { title: string } }) => (
     <div className="aspect-square bg-gradient-to-br from-emerald-200 to-teal-200 flex items-center justify-center">
       <div className="text-center">
         <Image src={ngaji} alt="ngaji" className="w-full h-full" />
@@ -183,7 +191,13 @@ const DocumentationPage = () => {
     </div>
   );
 
-  const Modal = ({ image, onClose }: any) => (
+  const Modal = ({
+    image,
+    onClose,
+  }: {
+    image: { title: string; date: string; description: string };
+    onClose: () => void;
+  }) => (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
       <div className="relative max-w-4xl max-h-[90vh] w-full">
         <button
@@ -291,15 +305,15 @@ const DocumentationPage = () => {
               {selectedCategory !== "all" && (
                 <span className="text-emerald-600 font-medium">
                   {" "}
-                  dalam kategori "
-                  {categories.find((c) => c.id === selectedCategory)?.name}"
+                  dalam kategori
+                  {categories.find((c) => c.id === selectedCategory)?.name}
                 </span>
               )}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredData.map((item: any) => (
+            {filteredData.map((item: DocumentationItem) => (
               <div
                 key={item.id}
                 className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
@@ -354,7 +368,7 @@ const DocumentationPage = () => {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">TPQ Al Karamah</h2>
           <p className="text-emerald-100 mb-6">
-            Pusat Pendidikan Al-Qur'an untuk Anak-anak
+            Pusat Pendidikan Al-Qur&apos;an untuk Anak-anak
           </p>
           <div className="flex items-center justify-center gap-2 text-emerald-200">
             <MapPin className="w-5 h-5" />
