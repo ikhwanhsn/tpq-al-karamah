@@ -202,8 +202,17 @@ const TPQLandingPage = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto"></div>
         </div>
+        {/* <iframe
+          src="https://www.google.com/maps/embed?pb=!3m2!1sid!2sid!4v1752504527141!5m2!1sid!2sid!6m8!1m7!1sdprnPUiC1pJ-LfWQ-_AImA!2m2!1d-7.096018627649024!2d110.446546495317!3f160.44568136846!4f-14.011694236796004!5f0.7820865974627469"
+          width="100%"
+          height="600"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe> */}
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17390.443411701275!2d110.4428823950093!3d-7.103074765593146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708f174dd4e395%3A0x5027a76e3570200!2sMluweh%2C%20Kec.%20Ungaran%20Tim.%2C%20Kabupaten%20Semarang%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1752427687994!5m2!1sid!2sid"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3670152607194!2d110.4465457437708!3d-7.096005327730966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708f3a16ac1fa1%3A0xf7320e2b4a22768f!2sMASJID%20BAITUS%20SOLICHIN!5e0!3m2!1sid!2sid!4v1752504736253!5m2!1sid!2sid"
           width="100%"
           height="600"
           style={{ border: 0 }}
