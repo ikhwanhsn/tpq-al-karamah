@@ -142,7 +142,7 @@ const DocumentationPage = () => {
     },
     {
       id: 12,
-      title: "Masjid TPQ Al Karamah",
+      title: "Masjid TPQ Al Karomah",
       description: "Masjid yang digunakan untuk kegiatan shalat berjamaah",
       category: "facilities",
       date: "2024-01-08",
@@ -246,7 +246,7 @@ const DocumentationPage = () => {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-4">Dokumentasi</h1>
             <p className="text-xl md:text-2xl text-emerald-100 max-w-2xl mx-auto">
-              Koleksi foto kegiatan dan suasana pembelajaran di TPQ Al Karamah
+              Koleksi foto kegiatan dan suasana pembelajaran di TPQ Al Karomah
             </p>
           </div>
         </div>
@@ -366,7 +366,7 @@ const DocumentationPage = () => {
       {/* Back to Top */}
       <section className="py-12 bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">TPQ Al Karamah</h2>
+          <h2 className="text-3xl font-bold mb-4">TPQ Al Karomah</h2>
           <p className="text-emerald-100 mb-6">
             Pusat Pendidikan Al-Qur&apos;an untuk Anak-anak
           </p>

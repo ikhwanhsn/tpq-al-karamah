@@ -38,7 +38,7 @@ const TPQLandingPage = () => {
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent">
-            TPQ Al Karamah
+            TPQ Al Karomah
           </h1>
 
           <p className="text-xl md:text-2xl mb-2 text-emerald-100 max-w-2xl mx-auto">
@@ -361,7 +361,7 @@ const TPQLandingPage = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto"></div>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-              Lihat kegiatan dan suasana pembelajaran di TPQ Al Karamah
+              Lihat kegiatan dan suasana pembelajaran di TPQ Al Karomah
             </p>
           </div>
 

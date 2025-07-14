@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TPQ Al Karamah",
+  title: "TPQ Al Karomah",
   description:
-    "TPQ Al Karamah adalah website resmi TPQ Al Karamah yang berisi informasi tentang kegiatan, kegiatan yang akan diadakan, dan kegiatan yang telah diadakan.",
+    "TPQ Al Karomah adalah website resmi TPQ Al Karomah yang berisi informasi tentang kegiatan, kegiatan yang akan diadakan, dan kegiatan yang telah diadakan.",
 };
 
 export default function RootLayout({
