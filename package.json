@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^6.12.0",
+    "firebase": "^12.0.0",
     "lucide-react": "^0.525.0",
+    "mongodb": "^6.17.0",
     "mongoose": "^8.16.3",
     "next": "15.3.5",
     "react": "^19.0.0",
@@ -18,11 +21,13 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/mongoose": "^5.11.96",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
+    "prisma": "^6.12.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

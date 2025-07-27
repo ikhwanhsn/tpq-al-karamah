@@ -9,8 +9,9 @@ import {
   Phone,
   MessageCircle,
   Star,
-  Heart,
   Award,
+  Mail,
+  Hash,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -52,7 +53,7 @@ const TPQLandingPage = () => {
           <section className="flex items-center justify-center gap-2">
             <div className="inline-flex items-center gap-2 bg-white/20 p-4 rounded-full backdrop-blur-sm">
               <Award className="w-5 h-5" />
-              <span className="font-semibold">Berdiri sejak 2020</span>
+              <span className="font-semibold">Berdiri sejak 2004</span>
             </div>
             <button
               onClick={() => scrollToSection("kontak")}
@@ -70,10 +71,10 @@ const TPQLandingPage = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 cursor-pointer">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold text-emerald-600 mb-2">30+</h3>
+              <h3 className="text-3xl font-bold text-emerald-600 mb-2">46</h3>
               <p className="text-gray-600">Santri Aktif</p>
             </div>
 
@@ -91,6 +92,115 @@ const TPQLandingPage = () => {
               </div>
               <h3 className="text-3xl font-bold text-green-600 mb-2">5</h3>
               <p className="text-gray-600">Tahun Berpengalaman</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Beranda Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-emerald-700 mb-4">
+                Beranda
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto"></div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+              {/* About Text */}
+              <div className="space-y-6">
+                <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-8 hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
+                      <BookOpen className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-emerald-700">
+                      Tentang TPQ Al Karomah
+                    </h3>
+                  </div>
+
+                  <p className="text-gray-700 leading-relaxed mb-6">
+                    Taman Pendidikan al-Qur&apos;an (TPQ) Al Karomah yang
+                    bernaung pada lembaga Pendidikan Al Karomah Kabupaten
+                    Semarang didirikan dalam rangka membantu menunaikan tugas
+                    utama orang tua yaitu menjaga kefitrahan anak dengan
+                    memberikan Pendidikan al-Qur&apos;an dan as-Sunnah.
+                  </p>
+
+                  <p className="text-gray-700 leading-relaxed mb-6">
+                    TPQ Al Karomah telah berdiri sejak tahun 2004 yang beralamat
+                    di Jalan Ngori Gunung Tugel RT.03 RW.01 Dusun Karanggawang
+                    Desa Mluweh Kecamatan Ungaran Timur Kabupaten Semarang
+                    Provinsi Jawa Tengah dan telah terdaftar di Kantor
+                    Kementerian Agama Kabupaten Semarang, Tanggal 21 Juni 2021
+                    dengan nomor : 893 Tahun 2021.
+                  </p>
+
+                  <p className="text-gray-700 leading-relaxed">
+                    Kemampuan membaca al-Qur&apos;an merupakan dasar bagi umat
+                    Islam guna memahami, menghayati, dan mengamalkan
+                    syari&apos;at Islam. Maka upaya peningkatan kemampuan baca
+                    tulis al-Qur&apos;an dan kemampuan bersikap akhlakul karimah
+                    serta berakidah mantap merupakan tuntutan yang mendasar
+                    untuk segera diaplikasikan terhadap anak.
+                  </p>
+                </div>
+              </div>
+
+              {/* Vision & Mission */}
+              <div className="space-y-6">
+                {/* Vision */}
+                <div className="bg-gradient-to-br from-teal-50 to-green-50 rounded-2xl p-8 hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-green-500 rounded-full flex items-center justify-center">
+                      <Star className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-teal-700">Visi</h3>
+                  </div>
+
+                  <div className="bg-white/60 rounded-lg p-6">
+                    <p className="text-gray-700 font-medium text-center leading-relaxed">
+                      &quot;Menjadikan generasi Qur&apos;ani yang berilmu,
+                      bertaqwa, berakhlakul karimah dan berprestasi.&quot;
+                    </p>
+                  </div>
+                </div>
+
+                {/* Mission */}
+                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
+                      <Award className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-green-700">Misi</h3>
+                  </div>
+
+                  <div className="space-y-3">
+                    {[
+                      "Mampu membaca Al-Qur'an dengan baik dan benar",
+                      "Mampu memahami makna ayat-ayat dalam Al-Qur'an",
+                      "Membentuk karakter santri yang berakhlakul karimah",
+                      "Mengamalkan nilai-nilai mulia yang terkandung dalam Al-Qur'an",
+                    ].map((misi, index) => (
+                      <div
+                        key={index}
+                        className="flex items-start gap-3 p-3 bg-white/60 rounded-lg hover:bg-white/80 transition-colors duration-200"
+                      >
+                        <div className="w-6 h-6 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <span className="text-white text-sm font-bold">
+                            {index + 1}
+                          </span>
+                        </div>
+                        <span className="text-gray-700 leading-relaxed">
+                          {misi}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -132,19 +242,17 @@ const TPQLandingPage = () => {
                       <h3 className="font-semibold text-teal-700 mb-1">
                         Tahun Berdiri
                       </h3>
-                      <p className="text-gray-600">2020</p>
+                      <p className="text-gray-600">2004</p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Heart className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Hash className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-green-700 mb-1">
-                        Pengelola
-                      </h3>
-                      <p className="text-gray-600">Pak Istajib</p>
+                      <h3 className="font-semibold text-green-700 mb-1">NIS</h3>
+                      <p className="text-gray-600">411233221401</p>
                     </div>
                   </div>
                 </div>
@@ -158,19 +266,7 @@ const TPQLandingPage = () => {
                       <h3 className="font-semibold text-emerald-700 mb-1">
                         Jumlah Santri
                       </h3>
-                      <p className="text-gray-600">30+ Santri Aktif</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Star className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-teal-700 mb-1">
-                        Usia Santri
-                      </h3>
-                      <p className="text-gray-600">7-12 Tahun</p>
+                      <p className="text-gray-600">46 Santri Aktif</p>
                     </div>
                   </div>
 
@@ -183,8 +279,26 @@ const TPQLandingPage = () => {
                         Jadwal
                       </h3>
                       <p className="text-gray-600">
-                        Senin - Kamis, 16:00 - 17:00 WIB
+                        Senin - Kamis, Sore ( 16.00 – 17.00 WIB ) dan ba&apos;da
+                        Maghrib ( 18.00 – 19.00 WIB )
                       </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-green-700 mb-1">
+                        Email
+                      </h3>
+                      <a
+                        href="mailto:tpqalkaromah828@gmail.com"
+                        className="text-gray-600 hover:underline"
+                      >
+                        tpqalkaromah828@gmail.com
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -246,11 +360,15 @@ const TPQLandingPage = () => {
 
               <div className="space-y-4">
                 {[
-                  "Ngaji Iqra",
+                  "Mengaji Iqra/ Turutan",
                   "Membaca Al-Qur'an",
-                  "Berjanji",
-                  "Maulid",
-                  "Dan lainnya",
+                  "Hafalan Surat-Surat Pendek",
+                  "Hafalan Doa-Doa Harian",
+                  "Hafalan Bacaan Salat",
+                  "Barzanji/ Dziba'an",
+                  "Ziarah Kubur",
+                  "Lomba-Lomba",
+                  "Dan Lainnya",
                 ].map((activity, index) => (
                   <div
                     key={index}
@@ -277,17 +395,19 @@ const TPQLandingPage = () => {
               </div>
 
               <div className="space-y-4">
-                {["Hari Santri", "Ziarah"].map((activity, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center gap-3 p-3 bg-white/60 rounded-lg hover:bg-white/80 transition-colors duration-200"
-                  >
-                    <div className="w-2 h-2 bg-gradient-to-r from-teal-500 to-green-500 rounded-full"></div>
-                    <span className="text-gray-700 font-medium">
-                      {activity}
-                    </span>
-                  </div>
-                ))}
+                {["Hari Santri", "Zarkasi", "Akhirusanah"].map(
+                  (activity, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-3 p-3 bg-white/60 rounded-lg hover:bg-white/80 transition-colors duration-200"
+                    >
+                      <div className="w-2 h-2 bg-gradient-to-r from-teal-500 to-green-500 rounded-full"></div>
+                      <span className="text-gray-700 font-medium">
+                        {activity}
+                      </span>
+                    </div>
+                  )
+                )}
               </div>
             </div>
           </div>
@@ -299,16 +419,18 @@ const TPQLandingPage = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-emerald-700 mb-4">
-              Ustadz/Ustadzah
+              Pengurus TPQ
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { name: "Pak Istajib", role: "Pengelola & Ustadz" },
-              { name: "Naily Miftahul Ulumi", role: "Ustadzah" },
-              { name: "Dzati Hanifah", role: "Ustadzah" },
+              { name: "Sujarman", role: "Pelindung" },
+              { name: "Supriyono, S.Ag", role: "Penasehat" },
+              { name: "Istajib", role: "Ketua" },
+              { name: "Naely Miftahul Ulumi, S.Pd", role: "Sekretaris" },
+              { name: "Mifrohah, S.Pd.I", role: "Bendahara" },
             ].map((teacher, index) => (
               <div
                 key={index}
@@ -337,12 +459,13 @@ const TPQLandingPage = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
               { icon: "🥁", name: "Alat Rebana" },
               { icon: "🕌", name: "Masjid" },
               { icon: "📖", name: "Al-Qur'an" },
               { icon: "🏫", name: "Ruangan Belajar" },
+              { icon: "📶", name: "Wifi" },
             ].map((facility, index) => (
               <div
                 key={index}
@@ -541,7 +664,7 @@ const TPQLandingPage = () => {
                 <Phone className="w-6 h-6" />
                 <span className="text-2xl font-bold">0895-2224-6622</span>
               </div>
-              <p className="text-emerald-100">Pak Istajib</p>
+              <p className="text-emerald-100">Istajib</p>
             </div>
 
             <a
